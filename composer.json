@@ -1,0 +1,33 @@
+{
+    "name": "webrteu/smartbill",
+    "description": "SmartBill integration for Auditor",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "WeBRTeu\\SmartBill\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WeBRTeu\\SmartBill\\SmartBillServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "WeBRTeu",
+            "homepage": "https://webrteu.eu",
+            "email": "pfa.razvan.bodnariu@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "webrteu/invoicing": "^1.0"
+    }
+}
